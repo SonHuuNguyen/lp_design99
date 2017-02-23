@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Lato-Thin';
+  src: URL('./fonts/Lato-Thin.woff');
+}
+
+@media (max-width: 320px) {
+	#item-text h1 {
+   		font-size: 1.3em !important; 
+   }
+   #item-text p {
+   		font-size: 0.9em !important;
+   }
+}
+
+body {
+	font-family: 'Lato-Thin';
+	padding-top: 50px; 
+}
+.navbar .container-fluid {
+	height: 50px;
+	overflow: hidden;
+}
+
+.navbar {
+	border-radius: 0px;
+	border: none;
+}
+.navbar-brand img{
+	margin-top: -10px;
+}
+
+ul li a {
+	color: #668cff;
+	font-family: 'Lato-Thin';
+}
+
+.navbar-nav * {
+
+	font-size: 1.2em;
+
+}
+
+
+	#myCarousel {
+	color: #FFF;
+	}
+
+   #item-text h1 {
+   		font-size: 4vw;
+   }
+   #item-text p {
+   		font-size: 2vw;
+   }
+	
