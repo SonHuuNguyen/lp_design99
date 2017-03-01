@@ -1,21 +1,22 @@
 @font-face {
-  font-family: 'Lato-Thin';
-  src: URL('./fonts/Lato-Thin.woff');
+	font-family: 'Lato-Thin';
+	src: URL('./fonts/Lato-Thin.woff');
 }
 
 @media (max-width: 320px) {
 	#item-text h1 {
-   		font-size: 1.3em !important; 
-   }
-   #item-text p {
-   		font-size: 0.9em !important;
-   }
+		font-size: 1.3em !important; 
+	}
+	#item-text p {
+		font-size: 0.9em !important;
+	}
 }
 
 body {
 	font-family: 'Lato-Thin';
 	padding-top: 50px; 
 }
+
 .navbar .container-fluid {
 	height: 50px;
 	overflow: hidden;
@@ -40,15 +41,118 @@ ul li a {
 
 }
 
-
-	#myCarousel {
+#myCarousel {
 	color: #FFF;
-	}
-
-   #item-text h1 {
-   		font-size: 4vw;
-   }
-   #item-text p {
-   		font-size: 2vw;
-   }
+}
+#myCarousel img {
+	min-height: 200%;
 	
+}
+#item-text h1 {
+	font-size: 4vw;
+}
+#item-text p {
+	font-size: 2vw;
+}
+.get-quote{
+	background-color: transparent;
+	border: solid 1px #FFF;
+}
+.get-quote:hover{
+  font-weight: bold;
+  color: #FFF;
+}
+#quote-form{
+	background-color: #F4F0E6;
+	color: #000;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+#form-brand{
+	height: 100px;
+	color: #FFF;
+	margin-left: -40px;	
+	margin-right: -40px;
+	background-color: #327CCB;
+	display: flex;
+	position: relative;
+}
+
+#form-brand *{
+	margin:auto;
+}
+.form-group input {
+	display: block;
+	font-size: 1.3em;
+	width: 100%;
+	background-color: #F49937;
+	margin-top: 30px;
+	border: none;
+	text-indent: 35px;
+	position: relative;
+}
+.form-group:after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 1px;
+	width: 70%;
+	margin-top: 0px;
+	margin-left: 30px;
+	border: none;
+	background-color: #F49937;
+}
+.on_focus:after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 1px;
+	width: 70%;
+	margin-top: 0px;
+	margin-left: 30px;
+	border: none;
+	box-shadow: 0px 0px 7px #F49937;
+}
+.form-group input#full-name {
+	background: url(../img/icon/user.png) no-repeat;
+	background-position: 0px 0px;
+}
+.form-group input#email {
+	background: url(../img/icon/email.png) no-repeat;
+	background-position: 0px 2px;
+}
+.form-group input#company-name {
+	background: url(../img/icon/company.png) no-repeat;
+	background-position: 0px 0px;
+}
+.form-group input#phone-number {
+	background: url(../img/icon/phone.png) no-repeat;
+	background-position: 0px 0px;
+}
+
+#quote-submit {
+	border-radius: 0px;
+	background-color: #327CCB;
+	font-weight: bold;
+	color: #FFF;
+	align-self: center;
+	margin-bottom: 15px;
+}
+
+#quote-container{
+	z-index: 100;
+	position: absolute;
+	top:0;
+	height: 100%;
+	width:100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+}
+#quote-container >div {
+	margin-top: auto;
+}
+#quote-form{
+	z-index: 110;
+	position: relative;
+}

@@ -19,7 +19,7 @@
 	<link href="css/fonts/Lato-Thin.woff" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body ng-app="">
 	<!-- navigatiion menu -->
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
@@ -58,16 +58,27 @@
 					<h1>Solutions for Every Business</h1>
 					<p>Better payment solutions catered to your needs.
 						No Contracts and No Cancellation fees.</p>
+						<button class="btn btn-defalt btn-lg get-quote">Get quote</button>
+						<p></p>
 					</div>
 				</div>
 
 				<div class="item" align="center">
 					<img src="img/home_hero.jpg" alt="home_hero" height="500">
-					<div id="item-text" class="carousel-caption"><h1>Start Accepting Cards Today</h1></div>
+					<div id="item-text" class="carousel-caption">
+						<h1>Start Accepting Cards Today</h1>
+						<p>Process invoices with easy QuickBooks integration</p>
+						<button class="btn btn-defalt btn-lg get-quote">Get quote</button>
+						<p></p>
+					</div>
 				</div>
 				<div class="item" align="center">
 					<img src="img/home_hero.jpg" alt="home_hero">
-					<div id="item-text" class="carousel-caption"><h1>Solutions for Every Business</h1></div>
+					<div id="item-text" class="carousel-caption"><h1>Solutions for Every Business</h1>
+						<p>Low-Cost Guarantee ensures you get the lowest rates available</p>
+						<button class="btn btn-defalt btn-lg get-quote">Get quote</button>
+						<p></p>
+					</div>
 				</div>
 			</div>
 			<!-- Left and right controls -->
@@ -80,11 +91,36 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-
+		<!-- Form for quote -->
+		<div id="quote-container"><div id="quote-form" class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-2">
+					<div id="form-brand">
+						<h2>Lower My Rate</h2>
+					</div>
+					<form>
+						<div class="form-group">
+						<br>
+							<input type="text" id="full-name" placeholder="Full-name">
+						</div>
+						<div class="form-group">
+							<input type="email" id="email" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<input type="text" id="company-name" placeholder="Company name">
+						</div>
+						<div class="form-group">
+							<input type="text" id="phone-number" placeholder="Phone number">
+						</div>
+						<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 col-sm-offset-3"><button type="submit" class="btn btn-block" id="quote-submit"><h3>Submit</h3></button></div>
+							
+						</div>
+					</form>
+				</div></div>
+		<!-- End of form for quote -->
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-sm-3 col-xs-12">
-					This is tas
+					
 				</div>
 			</div>
 		</div>
