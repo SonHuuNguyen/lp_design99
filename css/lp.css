@@ -12,9 +12,13 @@
 	}
 }
 
+html {
+	height: 100%;
+}
 body {
 	font-family: 'Lato-Thin';
 	padding-top: 50px; 
+	height: 100%;
 }
 
 .navbar .container-fluid {
@@ -89,7 +93,7 @@ ul li a {
 	background-color: #F49937;
 	margin-top: 30px;
 	border: none;
-	text-indent: 35px;
+	text-indent: 40px;
 	position: relative;
 }
 .form-group:after {
@@ -101,7 +105,7 @@ ul li a {
 	margin-top: 0px;
 	margin-left: 30px;
 	border: none;
-	background-color: #F49937;
+	background-color: #c7ba99;
 }
 .on_focus:after {
 	content: '';
@@ -112,6 +116,7 @@ ul li a {
 	margin-top: 0px;
 	margin-left: 30px;
 	border: none;
+	background-color: #F49937;
 	box-shadow: 0px 0px 7px #F49937;
 }
 .form-group input#full-name {
@@ -130,7 +135,25 @@ ul li a {
 	background: url(../img/icon/phone.png) no-repeat;
 	background-position: 0px 0px;
 }
+#fadded-screen{
+	z-index: 100;
+	position: fixed;
+	top:0;
+	height: 100%;
+	width:100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
 
+#quote-container{
+	z-index: 110;
+	position: fixed;
+	top:100px;
+}
+#quote-form{
+	position: fixed;
+	top:150px;
+
+}
 #quote-submit {
 	border-radius: 0px;
 	background-color: #327CCB;
@@ -140,19 +163,213 @@ ul li a {
 	margin-bottom: 15px;
 }
 
-#quote-container{
-	z-index: 100;
-	position: absolute;
-	top:0;
-	height: 100%;
-	width:100%;
-	background-color: rgba(0, 0, 0, 0.5);
+
+#our-service{
+	height: 6em;
+	display: flex;
+	justify-content: center;
+}
+#about-us{
+	align-self: center;
+}
+
+#icon-service1{
+	font-size: 1.9em;
+	color: #FFF;
+}
+#icon-service2{
+	color: #FFF;
+}
+#our-service-caption{
+	color: #FFF;
+}
+.sect {
+	background-size: cover;
+	background-attachment: fixed;
+	height: 30%;
+
+}
+.sect-img1 {
+	background-image: url(../img/bg_1.jpg);
 	display: flex;
 }
-#quote-container >div {
-	margin-top: auto;
+.sect-img2 {
+	background-image: url(../img/bg_2.jpg);
 }
-#quote-form{
-	z-index: 110;
+#our-service{
+	margin:auto;
+}
+
+#main-container, #main-container div  {
+position: relative;
+overflow: hidden;
+}
+
+#inner-main {
+	padding: 10px;
 	position: relative;
+	height: 100%;
+}
+.service-item {
+	text-align: center;
+	position: relative;
+}
+
+.service-item h3{
+	color: #0059b3;
+}
+.overlay p{
+	margin-top: 0px;
+	font-size: 2em;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.5);
+	color: #FFF;
+	 -webkit-transition: all 0.6s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.6s cubic-bezier(1,-0.99, 0, 1.81);
+}
+.service-item img {
+
+  -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(1,-0.99, 0, 1.81);
+}
+.service-item:hover img {
+-ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.service-item:hover .overlay {
+opacity: 1;
+filter: alpha (opacity=100);
+}
+.service-item:hover h2 {
+visibility: hidden;
+}
+.service-item:hover h3 {
+visibility: hidden;
+}
+.service-item:hover p {
+margin-top: 20px;
+
+}
+
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.2);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+.overlay button {
+	margin-top: 20%;
+	color: #FFF;
+	background-color: transparent;
+	border-radius: 0px;
+	border: solid #FFF 1px;
+	padding: 10px;
+	font-size: 1.1em;
+
+}
+.overlay button:hover {
+	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 7px #fff;
+}
+#icon-whyus{
+	margin:10%;
+}
+#whyus-left{
+	color: #327CCB;
+	position: relative;
+}
+#whyus-left:after {
+	content: '';
+	width: 5px;
+	height: 90%;
+	position: absolute;
+	top:10%;
+	right: 0px;
+	border-left: solid #327CCB 5px;
+}
+#whyus-right{
+	position: relative;
+}
+.whyus-right-icon {
+	height: 120px;
+	margin-left: 70px;
+	margin-top: 100px;
+	border-radius: 60px;
+	border: solid #FF3D7F 5px;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+}
+#why-1 .whyus-right-icon {
+	background-image: url('../img/icon/headphones.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#why-2 .whyus-right-icon {
+	background-image: url('../img/icon/price-protection.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#why-1 {
+	position: relative;
+}
+#why-1:before{
+	content: '';
+	position: absolute;
+	top:105px;
+	left: 32px;
+	height:123px;
+	width: 2px;
+	border-left: dashed #327CCB 2px;
+	-moz-transform:rotate(-35deg);
+	-webkit-transform:rotate(-35deg);
+}
+#why-1:after{
+	clear: both;
+}
+#why-2{
+position: relative;
+}
+#why-2:before{
+	content: '';
+	position: absolute;
+	top:105px;
+	left: 32px;
+	height:123px;
+	width: 2px;
+	border-left: dashed #327CCB 2px;
+	-moz-transform:rotate(-35deg);
+	-webkit-transform:rotate(-35deg);
+}
+.why-row {
+	position: relative;
+}
+.why-row:after {
+	content: '';
+	position: absolute;
+	top: 215px;
+	width: 80%;
+	height: 2px;
+	left: 70px;
+	border-bottom: dashed #327CCB 2px;
+}
+.row{overflow-y: hidden;}
+.whyus-right-content {
+	padding-top: 100px;
+}
+.whyus-right-content h4{
+	 -webkit-transition: all 0.5s cubic-bezier(0.88,-0.99, 0, 1.81);
+  transition: all 0.5s cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+.whyus-right-content:hover h4{
+	padding-left: 40px;
 }
