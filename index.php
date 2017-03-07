@@ -169,14 +169,17 @@
 			</div>
 		</div>
 		<div class="sect sect-img2">
+		<div id="our-service2">
+			<h1 id="our-service-caption">Why partner with us?</h1>
+		</div>
 		</div>
 		<div class="container" id="why-us">
 			<div class="row" id="inner-why-us">
 				<div class="col-xs-12 col-sm-5 col-md-5" id="whyus-left">
-					<div id="icon-whyus">
-						<img class="img-circle" src="img/whyus.jpg" alt="why-us">
-					</div>
-					<h1>Why partner wiht us?</h1>
+					<div><div id="icon-whyus">
+											<img class="img-circle" src="img/whyus.jpg" alt="why-us">
+										</div>
+										</div>
 				</div>
 				<div class="col-xs-12 col-sm-7 col-md-7" id="whyus-right">	
 					<div class="row why-row"  id="why-1">
@@ -191,8 +194,16 @@
 						<div class="col-xs-12 col-sm-2 col-md-2 whyus-right-icon">
 						</div>
 						<div class="col-xs-12 col-sm-8 col-md-8 whyus-right-content">
-							<h1>Customer Service</h1>
-							<h4>Knowledgeable account representatives deliver personal service</h4>
+							<h1>Price Protection</h1>
+							<h4>Protection for our customers so you can watch your bottom line.</h4>
+						</div>
+					</div>
+					<div class="row why-row"  id="why-3">
+						<div class="col-xs-12 col-sm-2 col-md-2 whyus-right-icon">
+						</div>
+						<div class="col-xs-12 col-sm-8 col-md-8 whyus-right-content">
+							<h1>No Contracts</h1>
+							<h4>Revolutionary program gives you solutions without contracts..</h4>
 						</div>
 					</div>
 
